@@ -1,0 +1,1 @@
+{"properties":{"title":{"fields":{"autocomplete":{"analyzer":"autocomplete","search_analyzer":"standard","type":"text"},"keyword":{"ignore_above":256,"type":"keyword"}},"type":"text"}}}
