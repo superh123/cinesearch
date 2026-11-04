@@ -1,1 +1,28 @@
-{"aggs":{"avg_rating_by_genre":{"aggs":{"avg_rating":{"avg":{"field":"avg_rating"}}},"terms":{"field":"genres"}},"distinct_genres":{"cardinality":{"field":"genres"}},"ratings_by_decade":{"histogram":{"field":"year","interval":10}}},"size":0}
+{
+  "aggs": {
+    "avg_rating_by_genre": {
+      "aggs": {
+        "avg_rating": {
+          "avg": {
+            "field": "avg_rating"
+          }
+        }
+      },
+      "terms": {
+        "field": "genres"
+      }
+    },
+    "distinct_genres": {
+      "cardinality": {
+        "field": "genres"
+      }
+    },
+    "ratings_by_decade": {
+      "histogram": {
+        "field": "year",
+        "interval": 10
+      }
+    }
+  },
+  "size": 0
+}

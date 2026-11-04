@@ -1,1 +1,18 @@
-{"query":{"function_score":{"boost_mode":"multiply","field_value_factor":{"factor":1,"field":"ratings_count","missing":1,"modifier":"log2p"},"query":{"match":{"title":"toy story"}}}}}
+{
+  "query": {
+    "function_score": {
+      "boost_mode": "multiply",
+      "field_value_factor": {
+        "factor": 1,
+        "field": "ratings_count",
+        "missing": 1,
+        "modifier": "log2p"
+      },
+      "query": {
+        "match": {
+          "title": "toy story"
+        }
+      }
+    }
+  }
+}

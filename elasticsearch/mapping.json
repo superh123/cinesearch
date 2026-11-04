@@ -1,1 +1,30 @@
-{"mappings":{"properties":{"avg_rating":{"type":"float"},"genres":{"type":"keyword"},"movie_id":{"type":"integer"},"ratings_count":{"type":"integer"},"title":{"fields":{"keyword":{"ignore_above":256,"type":"keyword"}},"type":"text"},"year":{"type":"integer"}}}}
+{
+  "mappings": {
+    "properties": {
+      "avg_rating": {
+        "type": "float"
+      },
+      "genres": {
+        "type": "keyword"
+      },
+      "movie_id": {
+        "type": "integer"
+      },
+      "ratings_count": {
+        "type": "integer"
+      },
+      "title": {
+        "fields": {
+          "keyword": {
+            "ignore_above": 256,
+            "type": "keyword"
+          }
+        },
+        "type": "text"
+      },
+      "year": {
+        "type": "integer"
+      }
+    }
+  }
+}
